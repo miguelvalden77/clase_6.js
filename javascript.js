@@ -1,7 +1,72 @@
 
+// foreach()
+let numbers = [2, 6, 7, 8, 9, 12]
+
+numbers.forEach((e)=>{
+    console.log(e)
+})
+
+const parImpar = (arr)=>{
+
+    arr.forEach((ele, index) => {
+        if(ele % 2 === 0){
+            console.log(`${ele} es par, tiene indice ${index}`)
+        } else{
+            console.log(`${ele} es impar, tiene indice ${index}`)
+        }
+    })
+
+}
+
+parImpar(numbers)
+
+
+// sort 
+let familia = ["Miguel", "Tete", "Pablo", "Estrella"]
+
+// 1. 
+familia.sort()
+console.log(familia)
+
+let numeros = [34, 2, 67, 23, 33, 6]
+
+// 2.
+numeros.sort((a, b)=>{
+    return b - a
+})
+console.log(numeros)
 
 
 
+let personas = [
+    {
+        nombre: "Juanpe",
+        nota: 8
+    },
+    {
+        nombre: "Pepe",
+        nota: 5
+    },
+    {
+        nombre: "Luis",
+        nota: 6
+    }
+];
+
+// 3.
+personas.sort((a, b)=>{
+
+    if(a.nota > b.nota){
+        return -1
+    } else if(a.nota < b.nota){
+        return 1
+    } else{
+        return 0
+    }
+
+})
+
+console.log(personas)
 
 
 
